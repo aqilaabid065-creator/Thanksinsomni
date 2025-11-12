@@ -2,78 +2,78 @@
 <html lang="id">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Thanksinsomnia Limited</title>
   <style>
-    body{margin:0;height:100vh;background:#fff;display:flex;flex-direction:column;justify-content:flex-start;align-items:center;padding:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;overflow:hidden;position:relative}
-    
-    /* EMOJI ATAS — PERSIS SAMA */
-    .t1{position:absolute;top:65px;left:88px;font-size:48px}
-    .t2{position:absolute;top:58px;left:208px;font-size:48px}
-    .t3{position:absolute;top:112px;left:145px;font-size:52px}
-    .t4{position:absolute;top:165px;left:195px;font-size:50px}
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{
+      background:#fff;
+      height:100vh;
+      display:flex;
+      flex-direction:column;
+      justify-content:flex-start;
+      align-items:center;
+      font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+      overflow:hidden;
+      position:relative;
+      padding:20px 0 0;
+    }
+    /* EMOJI ATAS — PIXEL EXACT */
+    .e1{position:absolute;top:68px;left:88px;font-size:68px}
+    .e2{position:absolute;top:62px;left:298px;font-size:70px}
+    .e3{position:absolute;top:152px;left:188px;font-size:78px}
+    .e4{position:absolute;top:218px;left:278px;font-size:72px}
 
-    /* TEKS UTAMA — UKURAN & JARAK PIXEL-PERFECT */
-    .main{margin-top:220px;text-align:center}
-    .line1{font-size:52px;font-weight:900;color:#000;margin:0 0 12px 0;letter-spacing:0.5px}
-    .line2{font-size:92px;font-weight:900;color:#000;margin:0;display:flex;align-items:center;justify-content:center;gap:28px;letter-spacing:2.8px}
-    .limited{font-size:64px;font-weight:900;color:#000;margin:32px 0 75px 0}
+    /* TEKS UTAMA — FONT WEIGHT & LETTER-SPACING EXACT */
+    .txt{margin-top:288px;text-align:center}
+    .t1{font-size:62px;font-weight:900;color:#000;letter-spacing:0.6px;margin-bottom:8px}
+    .t2{font-size:112px;font-weight:900;color:#000;display:flex;align-items:center;justify-content:center;gap:28px;letter-spacing:3.2px}
+    .t3{font-size:78px;font-weight:900;color:#000;margin:38px 0 82px;letter-spacing:1.2px}
 
-    /* EMOJI BAWAH — POSISI ACAK EXACT */
-    .b1{position:absolute;bottom:195px;left:82px;font-size:46px}
-    .b2{position:absolute;bottom:188px;left:178px;font-size:44px}
-    .b3{position:absolute;bottom:172px;left:268px;font-size:45px}
-    .b4{position:absolute;bottom:138px;left:152px;font-size:47px}
-    .b5{position:absolute;bottom:135px;left:240px;font-size:48px}
+    /* EMOJI BAWAH — ACAK ELEGANT EXACT */
+    .e5{position:absolute;bottom:198px;left:92px;font-size:66px}
+    .e6{position:absolute;bottom:192px;left:218px;font-size:64px}
+    .e7{position:absolute;bottom:172px;left:348px;font-size:68px}
+    .e8{position:absolute;bottom:128px;left:188px;font-size:70px}
+    .e9{position:absolute;bottom:122px;left:312px;font-size:72px}
 
     /* THE WINNER ABIDD — POJOK KIRI BAWAH EXACT */
-    .winner{position:absolute;bottom:28px;left:30px;font-size:14px;color:#000;font-weight:600;letter-spacing:0.8px}
+    .win{position:absolute;bottom:32px;left:38px;font-size:18px;font-weight:600;color:#000;letter-spacing:0.9px}
 
-    /* HP — TETEP PERSIS */
-    @media(max-width:600px){
-      .t1{top:38px;left:45px;font-size:32px}
-      .t2{top:35px;left:115px;font-size:32px}
-      .t3{top:68px;left:82px;font-size:34px}
-      .t4{top:98px;left:112px;font-size:33px}
-      .main{margin-top:135px}
-      .line1{font-size:28px}
-      .line2{font-size:42px;gap:12px}
-      .limited{font-size:34px;margin:18px 0 40px}
-      .b1{bottom:115px;left:42px;font-size:30px}
-      .b2{bottom:110px;left:92px;font-size:29px}
-      .b3{bottom:100px;left:142px;font-size:30px}
-      .b4{bottom:78px;left:78px;font-size:31px}
-      .b5{bottom:75px;left:128px;font-size:32px}
-      .winner{bottom:18px;left:20px;font-size:13px}
+    /* ANDROID 1080px FIX */
+    @media(min-width:1080px){
+      .e1{left:calc(50% - 440px)} .e2{left:calc(50% + 160px)}
+      .e3{left:calc(50% - 260px)} .e4{left:calc(50% + 120px)}
+      .e5{left:calc(50% - 420px)} .e6{left:calc(50% - 180px)}
+      .e7{left:calc(50% + 80px)} .e8{left:calc(50% - 260px)}
+      .e9{left:calc(50% + 60px)} .win{left:58px}
     }
   </style>
 </head>
 <body>
 
-  <!-- ATAS -->
-  <div class="t1">Sunglasses</div>
-  <div class="t2">Zany face</div>
-  <div class="t3">Red heart</div>
-  <div class="t4">Loudly crying face</div>
+  <!-- ATAS EXACT -->
+  <div class="e1">😎</div>
+  <div class="e2">🤪</div>
+  <div class="e3">❤️</div>
+  <div class="e4">😭</div>
 
-  <!-- TEKS -->
-  <div class="main">
-    <div class="line1">Terinspirasi dari</div>
-    <div class="line2">
-      Thanksinsomnia
-      <span>Heart eyes</span><span>Hundred points</span>
-    </div>
-    <div class="limited">Limited edition</div>
+  <!-- TEKS EXACT -->
+  <div class="txt">
+    <div class="t1">Terinspirasi dari</div>
+    <div class="t2">Thanksinsomnia<span>😍</span><span>💯</span></div>
+    <div class="t3">Limited edition</div>
   </div>
 
-  <!-- BAWAH -->
-  <div class="b1">Hugging face</div>
-  <div class="b2">Pensive face</div>
-  <div class="b3">Disappointed face</div>
-  <div class="b4">Face with tongue</div>
-  <div class="b5">Pouting face</div>
+  <!-- BAWAH EXACT -->
+  <div class="e5">🤗</div>
+  <div class="e6">😣</div>
+  <div class="e7">😥</div>
+  <div class="e8">😛</div>
+  <div class="e9">😡</div>
 
-  <!-- KIRI BAWAH -->
-  <div class="winner">the winner abidd</div>
+  <!-- KIRI BAWAH EXACT -->
+  <div class="win">the winner abidd</div>
 
 </body>
 </html>
