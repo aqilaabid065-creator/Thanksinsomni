@@ -4,144 +4,75 @@
   <meta charset="utf-8">
   <title>Thanksinsomnia Limited</title>
   <style>
-    body {
-      margin: 0;
-      height: 100vh;
-      background: #fff;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: center;
-      padding: 50px 30px 20px;
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      overflow: hidden;
-      position: relative;
-    }
+    body{margin:0;height:100vh;background:#fff;display:flex;flex-direction:column;justify-content:flex-start;align-items:center;padding:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;overflow:hidden;position:relative}
+    
+    /* EMOJI ATAS — PERSIS SAMA */
+    .t1{position:absolute;top:65px;left:88px;font-size:48px}
+    .t2{position:absolute;top:58px;left:208px;font-size:48px}
+    .t3{position:absolute;top:112px;left:145px;font-size:52px}
+    .t4{position:absolute;top:165px;left:195px;font-size:50px}
 
-    /* EMOJI ATAS — ACAK TAPI ELEGANT */
-    .top-emojis {
-      font-size: 3.6rem;
-      position: absolute;
-      top: 30px;
-      left: 50%;
-      transform: translateX(-50%);
-      line-height: 1.2;
-    }
-    .top-emojis span {
-      position: absolute;
-      animation: float 12s infinite ease-in-out;
-    }
-    .top-emojis span:nth-child(1) { top: -20px; left: -80px; animation-delay: 0s; }
-    .top-emojis span:nth-child(2) { top: -30px; left: 60px; animation-delay: 2s; }
-    .top-emojis span:nth-child(3) { top: 10px; left: -20px; animation-delay: 4s; }
-    .top-emojis span:nth-child(4) { top: 40px; left: 40px; animation-delay: 6s; }
+    /* TEKS UTAMA — UKURAN & JARAK PIXEL-PERFECT */
+    .main{margin-top:220px;text-align:center}
+    .line1{font-size:52px;font-weight:900;color:#000;margin:0 0 12px 0;letter-spacing:0.5px}
+    .line2{font-size:92px;font-weight:900;color:#000;margin:0;display:flex;align-items:center;justify-content:center;gap:28px;letter-spacing:2.8px}
+    .limited{font-size:64px;font-weight:900;color:#000;margin:32px 0 75px 0}
 
-    /* TEKS UTAMA */
-    .main {
-      text-align: center;
-      margin-top: 100px;
-    }
-    .line1 {
-      font-size: 4.3rem;
-      font-weight: 900;
-      color: #000;
-      margin: 0 0 8px 0;
-      letter-spacing: 1px;
-    }
-    .line2 {
-      font-size: 7.2rem;
-      font-weight: 900;
-      color: #000;
-      margin: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 22px;
-      letter-spacing: 3px;
-    }
-    .limited {
-      font-size: 5rem;
-      font-weight: 900;
-      color: #000;
-      margin: 25px 0 50px;
-      letter-spacing: 2px;
-    }
+    /* EMOJI BAWAH — POSISI ACAK EXACT */
+    .b1{position:absolute;bottom:195px;left:82px;font-size:46px}
+    .b2{position:absolute;bottom:188px;left:178px;font-size:44px}
+    .b3{position:absolute;bottom:172px;left:268px;font-size:45px}
+    .b4{position:absolute;bottom:138px;left:152px;font-size:47px}
+    .b5{position:absolute;bottom:135px;left:240px;font-size:48px}
 
-    /* EMOJI BAWAH — ACAK ELEGANT */
-    .bottom-emojis {
-      font-size: 3.4rem;
-      position: relative;
-      height: 120px;
-      margin-bottom: 20px;
-    }
-    .bottom-emojis span {
-      position: absolute;
-    }
-    .bottom-emojis span:nth-child(1) { top: 20px; left: 15%; }
-    .bottom-emojis span:nth-child(2) { top: 0; left: 42%; }
-    .bottom-emojis span:nth-child(3) { top: 35px; left: 68%; }
-    .bottom-emojis span:nth-child(4) { top: 70px; left: 28%; }
-    .bottom-emojis span:nth-child(5) { top: 55px; left: 55%; }
+    /* THE WINNER ABIDD — POJOK KIRI BAWAH EXACT */
+    .winner{position:absolute;bottom:28px;left:30px;font-size:14px;color:#000;font-weight:600;letter-spacing:0.8px}
 
-    /* THE WINNER ABIDD — POJOK KIRI BAWAH */
-    .winner {
-      position: absolute;
-      bottom: 20px;
-      left: 30px;
-      font-size: 1.1rem;
-      color: #000;
-      font-weight: 600;
-      letter-spacing: 0.8px;
-    }
-
-    /* ANIMASI FLOAT SUPAYA HIDUP */
-    @keyframes float {
-      0%, 100% { transform: translateY(0) rotate(0deg); }
-      50% { transform: translateY(-15px) rotate(5deg); }
-    }
-
-    /* RESPONSIVE HP */
-    @media (max-width: 600px) {
-      .top-emojis { font-size: 2.4rem; top: 20px; }
-      .top-emojis span { animation: none; }
-      .line1 { font-size: 2.6rem; }
-      .line2 { font-size: 3.9rem; gap: 10px; }
-      .limited { font-size: 2.9rem; }
-      .bottom-emojis { font-size: 2.2rem; height: 90px; }
-      .winner { bottom: 15px; left: 20px; font-size: 1rem; }
+    /* HP — TETEP PERSIS */
+    @media(max-width:600px){
+      .t1{top:38px;left:45px;font-size:32px}
+      .t2{top:35px;left:115px;font-size:32px}
+      .t3{top:68px;left:82px;font-size:34px}
+      .t4{top:98px;left:112px;font-size:33px}
+      .main{margin-top:135px}
+      .line1{font-size:28px}
+      .line2{font-size:42px;gap:12px}
+      .limited{font-size:34px;margin:18px 0 40px}
+      .b1{bottom:115px;left:42px;font-size:30px}
+      .b2{bottom:110px;left:92px;font-size:29px}
+      .b3{bottom:100px;left:142px;font-size:30px}
+      .b4{bottom:78px;left:78px;font-size:31px}
+      .b5{bottom:75px;left:128px;font-size:32px}
+      .winner{bottom:18px;left:20px;font-size:13px}
     }
   </style>
 </head>
 <body>
 
-  <!-- EMOJI ATAS ACAK -->
-  <div class="top-emojis">
-    <span>😎</span>
-    <span>🤪</span>
-    <span>❤️</span>
-    <span>😭</span>
-  </div>
+  <!-- ATAS -->
+  <div class="t1">Sunglasses</div>
+  <div class="t2">Zany face</div>
+  <div class="t3">Red heart</div>
+  <div class="t4">Loudly crying face</div>
 
-  <!-- TEKS UTAMA -->
+  <!-- TEKS -->
   <div class="main">
     <div class="line1">Terinspirasi dari</div>
     <div class="line2">
       Thanksinsomnia
-      <span>😍</span><span>💯</span>
+      <span>Heart eyes</span><span>Hundred points</span>
     </div>
     <div class="limited">Limited edition</div>
   </div>
 
-  <!-- EMOJI BAWAH ACAK -->
-  <div class="bottom-emojis">
-    <span>🤗</span>
-    <span>😣</span>
-    <span>😥</span>
-    <span>😛</span>
-    <span>😡</span>
-  </div>
+  <!-- BAWAH -->
+  <div class="b1">Hugging face</div>
+  <div class="b2">Pensive face</div>
+  <div class="b3">Disappointed face</div>
+  <div class="b4">Face with tongue</div>
+  <div class="b5">Pouting face</div>
 
-  <!-- POJOK KIRI BAWAH -->
+  <!-- KIRI BAWAH -->
   <div class="winner">the winner abidd</div>
 
 </body>
