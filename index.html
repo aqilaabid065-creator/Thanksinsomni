@@ -3,26 +3,65 @@
 <head>
   <meta charset="utf-8">
   <title>Thanksinsomnia Limited</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
       height: 100vh;
+      background: #000;
+      color: #fff;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      background: #000;
-      color: #fff;
-      font-family: 'Courier New', monospace;
+      padding: 40px;
       text-align: center;
-      padding: 20px;
+      overflow: hidden;
     }
-    h1 { font-size: 3rem; margin: 0; letter-spacing: 4px; }
-    h2 { font-size: 2rem; margin-top: 30px; color: #fff; }
+    .brat {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 4.5rem;
+      line-height: 1;
+      letter-spacing: 2px;
+      margin: 0;
+      transform: rotate(-2deg);
+      text-shadow: 4px 4px 0px #333;
+    }
+    .brat span {
+      display: block;
+      font-size: 5.5rem;
+      transform: rotate(1deg);
+    }
+    .limited {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 3rem;
+      margin-top: 20px;
+      letter-spacing: 6px;
+      transform: rotate(-1deg);
+    }
+    .mvp {
+      position: absolute;
+      bottom: 30px;
+      font-family: Arial, sans-serif;
+      font-size: 0.9rem;
+      color: #888;
+      letter-spacing: 1px;
+    }
+    @media (max-width: 600px) {
+      .brat { font-size: 2.8rem; }
+      .brat span { font-size: 3.5rem; }
+      .limited { font-size: 2rem; }
+    }
   </style>
 </head>
 <body>
-  <h1>Terinspirasi dari Thanksinsomnia😎👻</h1>
-  <h2>LIMITED EDITION</h2>
+  <div class="brat">
+    Terinspirasi dari<br>
+    <span>Thanksinsomnia😎👻</span>
+  </div>
+  
+  <div class="limited">LIMITED EDITION</div>
+  
+  <div class="mvp">yg MVP abid</div>
 </body>
 </html>
