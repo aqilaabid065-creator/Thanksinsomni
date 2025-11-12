@@ -3,7 +3,6 @@
 <head>
   <meta charset="utf-8">
   <title>Thanksinsomnia Limited</title>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
@@ -11,30 +10,94 @@
       background: #fff;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
-      padding: 40px;
-      text-align: center;
+      padding: 40px 20px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
       overflow: hidden;
     }
-    .brat {
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: 5rem;
-      line-height: 0.95;
-      letter-spacing: 3px;
-      margin: 0;
-      text-transform: lowercase;
-      color: #fff;
-      -webkit-text-stroke: 4px #000;
-      paint-order: stroke fill;
-      text-shadow: 
-        4px 4px 0 #000,
-        -1px -1px 0 #000,
-        1px -1px 0 #000,
-        -1px 1px 0 #000,
-        1px 1px 0 #000;
+    .top-emojis {
+      font-size: 3.2rem;
+      line-height: 1;
+      margin-top: 20px;
     }
-    .brat span {
+    .main-text {
+      text-align: center;
+      line-height: 1.1;
+      margin: 20px 0;
+    }
+    .line1 {
+      font-size: 3.8rem;
+      font-weight: 900;
+      color: #000;
+      margin: 0;
+    }
+    .line2 {
+      font-size: 5.5rem;
+      font-weight: 900;
+      color: #000;
+      margin: 8px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+    }
+    .limited {
+      font-size: 4.2rem;
+      font-weight: 900;
+      color: #000;
+      margin: 10px 0;
+    }
+    .bottom-emojis {
+      font-size: 3rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+      max-width: 90%;
+      margin-bottom: 30px;
+    }
+    .winner {
+      font-size: 1rem;
+      color: #000;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+      margin-bottom: 20px;
+    }
+    @media (max-width: 600px) {
+      .top-emojis { font-size: 2.2rem; }
+      .line1 { font-size: 2.5rem; }
+      .line2 { font-size: 3.2rem; gap: 10px; }
+      .limited { font-size: 2.6rem; }
+      .bottom-emojis { font-size: 2rem; gap: 15px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top-emojis">
+    😎    🤪<br>
+     ❤️   <br>
+        😭
+  </div>
+
+  <div class="main-text">
+    <div class="line1">Terinspirasi dari</div>
+    <div class="line2">
+      Thanksinsomnia<span>😍💯</span>
+    </div>
+    <div class="limited">Limited edition</div>
+  </div>
+
+  <div class="bottom-emojis">
+    🤗 😣 😥<br>
+    😛 😡
+  </div>
+
+  <div class="winner">the winner abidd</div>
+
+</body>
+</html>    .brat span {
       display: block;
       font-size: 6.8rem;
     }
