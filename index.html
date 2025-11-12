@@ -6,89 +6,75 @@
   <title>Thanksinsomnia Limited</title>
   <style>
     *{margin:0;padding:0;box-sizing:border-box}
-    html,body{height:100%;width:100%;overflow:hidden;background:#fff}
-    body{
-      font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
-      display:flex;justify-content:center;align-items:flex-start;
-      position:relative;
-    }
-    .container{
-      position:relative;
-      width:100vw;
-      height:100vh;
-      max-width:1080px;
-      margin:0 auto;
-    }
+    html,body{height:100%;width:100%;overflow:hidden;background:#fff;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+    body{display:flex;justify-content:center;align-items:flex-start;position:relative}
 
-    /* EMOJI ATAS — 100% SAMA DI HP & DESKTOP */
-    .e1{position:absolute;top:6vh;left:8vw;font-size:6.5vmin}
-    .e2{position:absolute;top:5.5vh;left:28vw;font-size:6.8vmin}
-    .e3{position:absolute;top:13vh;left:17vw;font-size:7.5vmin}
-    .e4{position:absolute;top:19vh;left:26vw;font-size:7vmin}
+    /* EMOJI ATAS — SUPER MENCAR & PERSIS */
+    .e1{position:absolute;top:5vh;left:6vw;font-size:7.2vmin}
+    .e2{position:absolute;top:4vh;left:32vw;font-size:7.5vmin}
+    .e3{position:absolute;top:12vh;left:18vw;font-size:8.2vmin}
+    .e4{position:absolute;top:16vh;left:28vw;font-size:7.4vmin}
 
-    /* TEKS UTAMA */
-    .txt{position:absolute;top:26vh;left:50%;transform:translateX(-50%);text-align:center;width:100%}
-    .t1{font-size:5.8vmin;font-weight:900;letter-spacing:0.8px;margin-bottom:1vh}
-    .t2{font-size:10.5vmin;font-weight:900;display:flex;align-items:center;justify-content:center;gap:2.6vw;letter-spacing:0.4vw}
-    .t3{font-size:7.3vmin;font-weight:900;margin:3.5vh 0 8vh;letter-spacing:0.2vw}
+    /* TEKS UTAMA — THANKSINSOMNIA + 😍💯 PERFECT SINKRON */
+    .txt{position:absolute;top:24vh;left:50%;transform:translateX(-50%);text-align:center;width:90%}
+    .t1{font-size:6.2vmin;font-weight:900;letter-spacing:0.8px;margin-bottom:1.2vh;color:#000}
+    .t2{font-size:11.8vmin;font-weight:900;display:flex;align-items:center;justify-content:center;gap:2.2vw;letter-spacing:0.38vw;line-height:1}
+    .t2 span{font-size:0.92em}
+    .t3{font-size:8vmin;font-weight:900;margin:4vh 0 9vh;letter-spacing:0.15vw;color:#000}
 
-    /* EMOJI BAWAH */
-    .e5{position:absolute;bottom:18vh;left:8.5vw;font-size:6.4vmin}
-    .e6{position:absolute;bottom:17.5vh;left:20vw;font-size:6.2vmin}
-    .e7{position:absolute;bottom:16vh;left:32vw;font-size:6.6vmin}
-    .e8{position:absolute;bottom:12vh;left:17vw;font-size:6.8vmin}
-    .e9{position:absolute;bottom:11.5vh;left:29vw;font-size:7vmin}
+    /* EMOJI BAWAH — LEBIH MENCAR & ACAK */
+    .e5{position:absolute;bottom:22vh;left:5vw;font-size:6.8vmin}
+    .e6{position:absolute;bottom:20vh;left:22vw;font-size:6.5vmin}
+    .e7{position:absolute;bottom:19vh;left:38vw;font-size:6.7vmin}
+    .e8{position:absolute;bottom:14vh;left:15vw;font-size:7.2vmin}
+    .e9{position:absolute;bottom:13vh;left:32vw;font-size:7.4vmin}
 
-    /* THE WINNER ABIDD — SELALU DI POJOK KIRI BAWAH */
-    .win{
-      position:absolute;
-      bottom:3vh;
-      left:3.5vw;
-      font-size:1.7vmin;
-      font-weight:600;
-      letter-spacing:0.1vw;
-      color:#000;
-    }
+    /* THE WINNER ABIDD — POJOK KIRI BAWAH */
+    .win{position:absolute;bottom:3.5vh;left:4vw;font-size:1.8vmin;font-weight:600;color:#000;letter-spacing:0.12vw}
 
-    /* DESKTOP OVERRIDE — TETEP SAMA */
+    /* DESKTOP MODE — TETEP SEMPURNA */
     @media(min-width:1024px){
-      .e1{top:68px;left:88px;font-size:68px}
-      .e2{top:62px;left:298px;font-size:70px}
-      .e3{top:152px;left:188px;font-size:78px}
-      .e4{top:218px;left:278px;font-size:72px}
-      .txt{top:288px}
+      .e1{top:50px;left:60px;font-size:72px}
+      .e2{top:40px;left:320px;font-size:75px}
+      .e3{top:120px;left:180px;font-size:82px}
+      .e4{top:160px;left:280px;font-size:74px}
+      .txt{top:240px}
       .t1{font-size:62px}
-      .t2{font-size:112px;gap:28px}
-      .t3{font-size:78px;margin:38px 0 82px}
-      .e5{bottom:198px;left:92px;font-size:66px}
-      .e6{bottom:192px;left:218px;font-size:64px}
-      .e7{bottom:172px;left:348px;font-size:68px}
-      .e8{bottom:128px;left:188px;font-size:70px}
-      .e9{bottom:122px;left:312px;font-size:72px}
-      .win{bottom:32px;left:38px;font-size:18px}
+      .t2{font-size:118px;gap:22px}
+      .t3{font-size:80px;margin:40px 0 90px}
+      .e5{bottom:220px;left:50px;font-size:68px}
+      .e6{bottom:200px;left:220px;font-size:65px}
+      .e7{bottom:190px;left:380px;font-size:67px}
+      .e8{bottom:140px;left:150px;font-size:72px}
+      .e9{bottom:130px;left:320px;font-size:74px}
+      .win{bottom:35px;left:40px;font-size:18px}
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <div class="e1">😎</div>
-    <div class="e2">🤪</div>
-    <div class="e3">❤️</div>
-    <div class="e4">😭</div>
 
-    <div class="txt">
-      <div class="t1">Terinspirasi dari</div>
-      <div class="t2">Thanksinsomnia<span>😍</span><span>💯</span></div>
-      <div class="t3">Limited edition</div>
-    </div>
+  <!-- ATAS SUPER MENCAR -->
+  <div class="e1">Sunglasses</div>
+  <div class="e2">Zany face</div>
+  <div class="e3">Red heart</div>
+  <div class="e4">Loudly crying face</div>
 
-    <div class="e5">🤗</div>
-    <div class="e6">😣</div>
-    <div class="e7">😥</div>
-    <div class="e8">😛</div>
-    <div class="e9">😡</div>
-
-    <div class="win">the winner abidd</div>
+  <!-- TEKS + 😍💯 SINKRON SEMPURNA -->
+  <div class="txt">
+    <div class="t1">Terinspirasi dari</div>
+    <div class="t2">Thanksinsomnia<span>Heart eyes</span><span>Hundred points</span></div>
+    <div class="t3">Limited edition</div>
   </div>
+
+  <!-- BAWAH LEBIH MENCAR -->
+  <div class="e5">Hugging face</div>
+  <div class="e6">Pensive face</div>
+  <div class="e7">Disappointed face</div>
+  <div class="e8">Face with tongue</div>
+  <div class="e9">Pouting face</div>
+
+  <!-- POJOK KIRI BAWAH -->
+  <div class="win">the winner abidd</div>
+
 </body>
 </html>
