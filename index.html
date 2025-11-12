@@ -2,78 +2,93 @@
 <html lang="id">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>Thanksinsomnia Limited</title>
   <style>
     *{margin:0;padding:0;box-sizing:border-box}
+    html,body{height:100%;width:100%;overflow:hidden;background:#fff}
     body{
-      background:#fff;
-      height:100vh;
-      display:flex;
-      flex-direction:column;
-      justify-content:flex-start;
-      align-items:center;
       font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
-      overflow:hidden;
+      display:flex;justify-content:center;align-items:flex-start;
       position:relative;
-      padding:20px 0 0;
     }
-    /* EMOJI ATAS — PIXEL EXACT */
-    .e1{position:absolute;top:68px;left:88px;font-size:68px}
-    .e2{position:absolute;top:62px;left:298px;font-size:70px}
-    .e3{position:absolute;top:152px;left:188px;font-size:78px}
-    .e4{position:absolute;top:218px;left:278px;font-size:72px}
+    .container{
+      position:relative;
+      width:100vw;
+      height:100vh;
+      max-width:1080px;
+      margin:0 auto;
+    }
 
-    /* TEKS UTAMA — FONT WEIGHT & LETTER-SPACING EXACT */
-    .txt{margin-top:288px;text-align:center}
-    .t1{font-size:62px;font-weight:900;color:#000;letter-spacing:0.6px;margin-bottom:8px}
-    .t2{font-size:112px;font-weight:900;color:#000;display:flex;align-items:center;justify-content:center;gap:28px;letter-spacing:3.2px}
-    .t3{font-size:78px;font-weight:900;color:#000;margin:38px 0 82px;letter-spacing:1.2px}
+    /* EMOJI ATAS — 100% SAMA DI HP & DESKTOP */
+    .e1{position:absolute;top:6vh;left:8vw;font-size:6.5vmin}
+    .e2{position:absolute;top:5.5vh;left:28vw;font-size:6.8vmin}
+    .e3{position:absolute;top:13vh;left:17vw;font-size:7.5vmin}
+    .e4{position:absolute;top:19vh;left:26vw;font-size:7vmin}
 
-    /* EMOJI BAWAH — ACAK ELEGANT EXACT */
-    .e5{position:absolute;bottom:198px;left:92px;font-size:66px}
-    .e6{position:absolute;bottom:192px;left:218px;font-size:64px}
-    .e7{position:absolute;bottom:172px;left:348px;font-size:68px}
-    .e8{position:absolute;bottom:128px;left:188px;font-size:70px}
-    .e9{position:absolute;bottom:122px;left:312px;font-size:72px}
+    /* TEKS UTAMA */
+    .txt{position:absolute;top:26vh;left:50%;transform:translateX(-50%);text-align:center;width:100%}
+    .t1{font-size:5.8vmin;font-weight:900;letter-spacing:0.8px;margin-bottom:1vh}
+    .t2{font-size:10.5vmin;font-weight:900;display:flex;align-items:center;justify-content:center;gap:2.6vw;letter-spacing:0.4vw}
+    .t3{font-size:7.3vmin;font-weight:900;margin:3.5vh 0 8vh;letter-spacing:0.2vw}
 
-    /* THE WINNER ABIDD — POJOK KIRI BAWAH EXACT */
-    .win{position:absolute;bottom:32px;left:38px;font-size:18px;font-weight:600;color:#000;letter-spacing:0.9px}
+    /* EMOJI BAWAH */
+    .e5{position:absolute;bottom:18vh;left:8.5vw;font-size:6.4vmin}
+    .e6{position:absolute;bottom:17.5vh;left:20vw;font-size:6.2vmin}
+    .e7{position:absolute;bottom:16vh;left:32vw;font-size:6.6vmin}
+    .e8{position:absolute;bottom:12vh;left:17vw;font-size:6.8vmin}
+    .e9{position:absolute;bottom:11.5vh;left:29vw;font-size:7vmin}
 
-    /* ANDROID 1080px FIX */
-    @media(min-width:1080px){
-      .e1{left:calc(50% - 440px)} .e2{left:calc(50% + 160px)}
-      .e3{left:calc(50% - 260px)} .e4{left:calc(50% + 120px)}
-      .e5{left:calc(50% - 420px)} .e6{left:calc(50% - 180px)}
-      .e7{left:calc(50% + 80px)} .e8{left:calc(50% - 260px)}
-      .e9{left:calc(50% + 60px)} .win{left:58px}
+    /* THE WINNER ABIDD — SELALU DI POJOK KIRI BAWAH */
+    .win{
+      position:absolute;
+      bottom:3vh;
+      left:3.5vw;
+      font-size:1.7vmin;
+      font-weight:600;
+      letter-spacing:0.1vw;
+      color:#000;
+    }
+
+    /* DESKTOP OVERRIDE — TETEP SAMA */
+    @media(min-width:1024px){
+      .e1{top:68px;left:88px;font-size:68px}
+      .e2{top:62px;left:298px;font-size:70px}
+      .e3{top:152px;left:188px;font-size:78px}
+      .e4{top:218px;left:278px;font-size:72px}
+      .txt{top:288px}
+      .t1{font-size:62px}
+      .t2{font-size:112px;gap:28px}
+      .t3{font-size:78px;margin:38px 0 82px}
+      .e5{bottom:198px;left:92px;font-size:66px}
+      .e6{bottom:192px;left:218px;font-size:64px}
+      .e7{bottom:172px;left:348px;font-size:68px}
+      .e8{bottom:128px;left:188px;font-size:70px}
+      .e9{bottom:122px;left:312px;font-size:72px}
+      .win{bottom:32px;left:38px;font-size:18px}
     }
   </style>
 </head>
 <body>
+  <div class="container">
+    <div class="e1">😎</div>
+    <div class="e2">🤪</div>
+    <div class="e3">❤️</div>
+    <div class="e4">😭</div>
 
-  <!-- ATAS EXACT -->
-  <div class="e1">😎</div>
-  <div class="e2">🤪</div>
-  <div class="e3">❤️</div>
-  <div class="e4">😭</div>
+    <div class="txt">
+      <div class="t1">Terinspirasi dari</div>
+      <div class="t2">Thanksinsomnia<span>😍</span><span>💯</span></div>
+      <div class="t3">Limited edition</div>
+    </div>
 
-  <!-- TEKS EXACT -->
-  <div class="txt">
-    <div class="t1">Terinspirasi dari</div>
-    <div class="t2">Thanksinsomnia<span>😍</span><span>💯</span></div>
-    <div class="t3">Limited edition</div>
+    <div class="e5">🤗</div>
+    <div class="e6">😣</div>
+    <div class="e7">😥</div>
+    <div class="e8">😛</div>
+    <div class="e9">😡</div>
+
+    <div class="win">the winner abidd</div>
   </div>
-
-  <!-- BAWAH EXACT -->
-  <div class="e5">🤗</div>
-  <div class="e6">😣</div>
-  <div class="e7">😥</div>
-  <div class="e8">😛</div>
-  <div class="e9">😡</div>
-
-  <!-- KIRI BAWAH EXACT -->
-  <div class="win">the winner abidd</div>
-
 </body>
 </html>
