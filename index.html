@@ -8,8 +8,7 @@
     body {
       margin: 0;
       height: 100vh;
-      background: #000;
-      color: #fff;
+      background: #fff;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -20,21 +19,62 @@
     }
     .brat {
       font-family: 'Bebas Neue', sans-serif;
-      font-size: 4.5rem;
-      line-height: 1;
-      letter-spacing: 2px;
+      font-size: 5rem;
+      line-height: 0.95;
+      letter-spacing: 3px;
       margin: 0;
-      transform: rotate(-2deg);
-      text-shadow: 4px 4px 0px #333;
+      text-transform: lowercase;
+      color: #fff;
+      -webkit-text-stroke: 4px #000;
+      paint-order: stroke fill;
+      text-shadow: 
+        4px 4px 0 #000,
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
     }
     .brat span {
       display: block;
-      font-size: 5.5rem;
-      transform: rotate(1deg);
+      font-size: 6.8rem;
     }
     .limited {
       font-family: 'Bebas Neue', sans-serif;
-      font-size: 3rem;
+      font-size: 4rem;
+      margin-top: 10px;
+      letter-spacing: 10px;
+      text-transform: lowercase;
+      color: #fff;
+      -webkit-text-stroke: 3px #000;
+      paint-order: stroke fill;
+    }
+    .mvp {
+      position: absolute;
+      bottom: 30px;
+      font-family: Arial, sans-serif;
+      font-size: 0.9rem;
+      color: #000;
+      letter-spacing: 1px;
+      text-transform: lowercase;
+    }
+    @media (max-width: 600px) {
+      .brat { font-size: 3rem; }
+      .brat span { font-size: 4.2rem; }
+      .limited { font-size: 2.3rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="brat">
+    terinspirasi dari<br>
+    <span>thanksinsomnia</span>
+  </div>
+  
+  <div class="limited">limited edition</div>
+  
+  <div class="mvp">yg mvp abid</div>
+</body>
+</html>      font-size: 3rem;
       margin-top: 20px;
       letter-spacing: 6px;
       transform: rotate(-1deg);
