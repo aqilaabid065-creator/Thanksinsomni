@@ -10,161 +10,99 @@
       background: #fff;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      justify-content: flex-start;
       align-items: center;
-      padding: 40px 20px;
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      padding: 60px 20px 40px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
       overflow: hidden;
+      text-align: center;
     }
     .top-emojis {
-      font-size: 3.2rem;
-      line-height: 1;
-      margin-top: 20px;
+      font-size: 3.8rem;
+      margin-bottom: 30px;
     }
-    .main-text {
-      text-align: center;
+    .top-emojis span {
+      margin: 0 30px;
+    }
+    .main {
       line-height: 1.1;
-      margin: 20px 0;
     }
     .line1 {
-      font-size: 3.8rem;
-      font-weight: 900;
-      color: #000;
-      margin: 0;
-    }
-    .line2 {
-      font-size: 5.5rem;
-      font-weight: 900;
-      color: #000;
-      margin: 8px 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 15px;
-    }
-    .limited {
       font-size: 4.2rem;
       font-weight: 900;
       color: #000;
-      margin: 10px 0;
+      margin: 0 0 10px 0;
+    }
+    .line2 {
+      font-size: 6.8rem;
+      font-weight: 900;
+      color: #000;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+    }
+    .thanksinsomnia {
+      letter-spacing: 2px;
+    }
+    .limited {
+      font-size: 4.8rem;
+      font-weight: 900;
+      color: #000;
+      margin: 20px 0 40px 0;
     }
     .bottom-emojis {
-      font-size: 3rem;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 25px;
-      max-width: 90%;
+      font-size: 3.5rem;
       margin-bottom: 30px;
     }
+    .bottom-emojis span {
+      margin: 0 25px;
+    }
     .winner {
-      font-size: 1rem;
+      font-size: 1.1rem;
       color: #000;
       font-weight: 500;
       letter-spacing: 0.5px;
-      margin-bottom: 20px;
     }
     @media (max-width: 600px) {
-      .top-emojis { font-size: 2.2rem; }
-      .line1 { font-size: 2.5rem; }
-      .line2 { font-size: 3.2rem; gap: 10px; }
-      .limited { font-size: 2.6rem; }
-      .bottom-emojis { font-size: 2rem; gap: 15px; }
+      .top-emojis { font-size: 2.5rem; margin-bottom: 20px; }
+      .top-emojis span { margin: 0 15px; }
+      .line1 { font-size: 2.6rem; }
+      .line2 { font-size: 3.8rem; gap: 10px; }
+      .limited { font-size: 2.8rem; margin: 15px 0 25px 0; }
+      .bottom-emojis { font-size: 2.2rem; }
+      .bottom-emojis span { margin: 0 12px; }
     }
   </style>
 </head>
 <body>
 
+  <!-- EMOJI ATAS -->
   <div class="top-emojis">
-    😎    🤪<br>
-     ❤️   <br>
-        😭
+    <span>😎</span><span>🤪</span><br>
+    <span>❤️</span><br>
+    <span>😭</span>
   </div>
 
-  <div class="main-text">
+  <!-- TEKS UTAMA -->
+  <div class="main">
     <div class="line1">Terinspirasi dari</div>
     <div class="line2">
-      Thanksinsomnia<span>😍💯</span>
+      <span class="thanksinsomnia">Thanksinsomnia</span>
+      <span>😍💯</span>
     </div>
     <div class="limited">Limited edition</div>
   </div>
 
+  <!-- EMOJI BAWAH -->
   <div class="bottom-emojis">
-    🤗 😣 😥<br>
-    😛 😡
+    <span>🤗</span><span>😣</span><span>😥</span><br>
+    <span>😛</span><span>😡</span>
   </div>
 
+  <!-- THE WINNER -->
   <div class="winner">the winner abidd</div>
 
-</body>
-</html>    .brat span {
-      display: block;
-      font-size: 6.8rem;
-    }
-    .limited {
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: 4rem;
-      margin-top: 10px;
-      letter-spacing: 10px;
-      text-transform: lowercase;
-      color: #fff;
-      -webkit-text-stroke: 3px #000;
-      paint-order: stroke fill;
-    }
-    .mvp {
-      position: absolute;
-      bottom: 30px;
-      font-family: Arial, sans-serif;
-      font-size: 0.9rem;
-      color: #000;
-      letter-spacing: 1px;
-      text-transform: lowercase;
-    }
-    @media (max-width: 600px) {
-      .brat { font-size: 3rem; }
-      .brat span { font-size: 4.2rem; }
-      .limited { font-size: 2.3rem; }
-    }
-  </style>
-</head>
-<body>
-  <div class="brat">
-    terinspirasi dari<br>
-    <span>thanksinsomnia</span>
-  </div>
-  
-  <div class="limited">limited edition</div>
-  
-  <div class="mvp">yg mvp abid</div>
-</body>
-</html>      font-size: 3rem;
-      margin-top: 20px;
-      letter-spacing: 6px;
-      transform: rotate(-1deg);
-    }
-    .mvp {
-      position: absolute;
-      bottom: 30px;
-      font-family: Arial, sans-serif;
-      font-size: 0.9rem;
-      color: #888;
-      letter-spacing: 1px;
-    }
-    @media (max-width: 600px) {
-      .brat { font-size: 2.8rem; }
-      .brat span { font-size: 3.5rem; }
-      .limited { font-size: 2rem; }
-    }
-  </style>
-</head>
-<body>
-  <div class="brat">
-    Terinspirasi dari<br>
-    <span>Thanksinsomnia😎👻</span>
-  </div>
-  
-  <div class="limited">LIMITED EDITION</div>
-  
-  <div class="mvp">yg MVP abid</div>
 </body>
 </html>
